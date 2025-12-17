@@ -1,0 +1,27 @@
+# 创建一个简单的GitHub Pages靶场
+cd ~
+mkdir online-target
+cd online-target
+
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>安全学习页面 - 仅用于合法测试</title>
+</head>
+<body>
+    <h1>合法的Web安全学习页面</h1>
+    <p>这个页面可以用于学习以下合法技能：</p>
+    <ul>
+        <li>HTML/CSS分析</li>
+        <li>JavaScript调试</li>
+        <li>浏览器开发者工具使用</li>
+        <li>网络请求分析</li>
+    </ul>
+    
+    <h2>学习资源：</h2>
+    <a href="https://portswigger.net/web-security">PortSwigger Web安全学院</a><br>
+    <a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP测试指南</a>
+</body>
+</html>
+EOF
